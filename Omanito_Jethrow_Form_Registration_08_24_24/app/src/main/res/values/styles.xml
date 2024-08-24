@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColor</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="android:statusBarColor">#8BC34A</item>
+    </style>
+
+    <style name="TextInputStyle">
+        <item name="boxBackgroundColor">@color/inputBackgroundColor</item>
+        <item name="boxStrokeColor">@color/primaryColor</item>
+        <item name="hintTextColor">@color/primaryColor</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:backgroundTint">@color/primaryColor</item>
+        <item name="android:textColor">@color/buttonTextColor</item>
+        <item name="android:elevation">8dp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+</resources>

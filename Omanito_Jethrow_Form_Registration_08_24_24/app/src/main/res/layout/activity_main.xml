@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/formBackground"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/formTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Form Registration"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textFontWeight="80"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="60dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInputStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:hint="Full Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:background="@drawable/rounded_corner" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Email Address Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInputStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/rounded_corner" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Mobile Number Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInputStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Number"
+        android:layout_marginTop="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/mobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:background="@drawable/rounded_corner" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/showDatePickerButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Date of Birth"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner"
+        android:layout_gravity="left" />
+
+    <!-- Date of Birth Picker (Initially Hidden) -->
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner"
+        android:layout_gravity="left"
+        android:visibility="gone" />
+
+    <!-- Age Label -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/TextInputStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/ageLabel"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_corner"
+            android:enabled="false"
+            android:textColor="@color/textColor"
+        android:hint="Age" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/errorPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You must be at least 18 years old"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"
+        android:layout_marginTop="8dp" />
+
+
+    <!-- Gender Spinner -->
+    <Spinner
+        android:id="@+id/genderSpinner"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner"
+        />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:text="Submit"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"/>
+</LinearLayout>

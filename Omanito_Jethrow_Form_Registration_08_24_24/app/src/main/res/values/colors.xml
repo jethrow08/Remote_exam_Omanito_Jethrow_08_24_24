@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#8BC34A</color>
+    <color name="primaryColorDark">#521DCA</color>
+    <color name="accentColor">#03DAC5</color>
+    <color name="inputBackgroundColor">#FFFFFF</color>
+    <color name="buttonColor">#8BC34A</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="formBackground">#F1F1F1</color>
+    <color name="textColor">#212121</color>
+</resources>
